@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab1. Data preparation.</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox{
+	border: 1px solid grey;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_dataGeneration">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>311</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Генерация данных</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>111</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Распределение</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>121</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Размер выборки</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_dataParams">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>291</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Параметры распределения</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>271</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_DataParams"/>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_dataGenerate">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>530</y>
+       <width>141</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сгенерировать</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_dataGenerator">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>221</width>
+       <height>37</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_dataAmount">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>150</y>
+       <width>221</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>100000</number>
+     </property>
+     <property name="singleStep">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>3000</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_dataInspection">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>611</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Исследования</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_inspectionHistogram">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>103</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Гисторгамма</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_inspectionMetrics">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>103</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Метрики</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_inspectionEstimate">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>103</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Плотности</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>611</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_dataDiagram"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
